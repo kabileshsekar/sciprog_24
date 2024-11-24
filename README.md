@@ -1,81 +1,77 @@
-# sciprog_24
+# Git Assignment Project
 
-# Magic Square Checker
+**Name:** Kabilesh Sekar 
 
-This practical demonstrates the implementation of a magic square checker in C. A magic square is a matrix where the sums of each row, each column, and the two diagonals are equal.
+**Student Number:** 24232135 
 
-## Contents
+## Introduction
 
-### Files
-- `magic_square.h`: Contains the function `isMagicSquare` to check if a given matrix is a magic square.
-- `magic_square.txt`: A sample magic square matrix for testing.
-- `not_magic_square.txt`: A sample non-magic square matrix for testing.
-- `main_stub.c`: A main program that reads a matrix from a file and checks if it is a magic square.
+This repository contains materials and assignments related to the **Scientific Programming Concepts** course.
+
+## Getting Started
+
+To get started with the materials in this repository:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kabileshsekar/sciprog_24.git
+   ```
+
+2. **Navigate to the Directory**:
+   ```bash
+   cd sciprog_24
+   ```
 
 ## Compilation and Execution
 
-Ensure you have a C compiler installed, such as GCC. To compile and run the program:
+For C programs included in the repository:
 
-### Compile
-```bash
-gcc -o magic_square_checker main_stub.c
-```
+1. **Compile the Program**:
+   - For programs that use `math.h`, include the `-lm` flag:
+     ```bash
+     gcc -o output_filename source_file.c -lm
+     ```
+   - For other programs:
+     ```bash
+     gcc -o output_filename source_file.c
+     ```
 
-### Execute
-```bash
-./magic_square_checker
-```
+2. **Run the Executable**:
+   ```bash
+   ./output_filename
+   ```
 
-### Input
-When prompted, enter the name of the file containing the matrix to check. Example:
-```plaintext
-Enter file name: magic_square.txt
-```
+## Contributions
 
-## Program Details
+If you'd like to contribute to this repository, follow these steps:
 
-### `magic_square.h`
-- Implements the `isMagicSquare` function.
-- The function:
-  - Eliminates negative side lengths.
-  - Checks if the sums of rows, columns, and diagonals match the expected magic constant: `M = n(n^2 + 1)/2`.
+1. **Fork the Repository**:
+   - Click on the 'Fork' button at the top right corner of this repository.
 
-### `magic_square.txt` and `not_magic_square.txt`
-- **`magic_square.txt`**:
-  A valid magic square:
-  ```plaintext
-  2 7 6
-  9 5 1
-  4 3 8
-  ```
+2. **Clone Your Forked Repository**:
+   ```bash
+   git clone https://github.com/your_username/sciprog_24.git
+   ```
 
-- **`not_magic_square.txt`**:
-  A non-magic square:
-  ```plaintext
-  1 2 3
-  4 5 6
-  7 8 9
-  ```
+3. **Create a New Branch for Your Feature or Fix**:
+   ```bash
+   git checkout -b feature_branch_name
+   ```
 
-### `main_stub.c`
-- Reads a matrix from a user-specified file.
-- Allocates memory dynamically for the matrix.
-- Populates the matrix with data from the file.
-- Calls `isMagicSquare` to determine if the matrix is a magic square.
-- Frees dynamically allocated memory after use.
+4. **Make Your Changes and Commit Them**:
+   ```bash
+   git add .
+   git commit -m "Description of changes"
+   ```
 
-### Example Execution
+5. **Push to Your Forked Repository**:
+   ```bash
+   git push origin feature_branch_name
+   ```
 
-#### Valid Magic Square
-Input: `magic_square.txt`
-```plaintext
-Enter file name: magic_square.txt
-The matrix is a magic square.
-```
+6. **Create a Pull Request**:
+   - Navigate to the original repository and click on 'New Pull Request'.
 
-#### Invalid Magic Square
-Input: `not_magic_square.txt`
-```plaintext
-Enter file name: not_magic_square.txt
-The matrix is NOT a magic square.
-```
+## Contact
+
+For any questions or issues, please open an issue in the repository or contact the repository owner directly.
